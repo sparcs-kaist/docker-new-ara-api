@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  ara-api:
+    container_name: ara-api
+    restart: always
+    build: ./ara-api
+    tty: false
+    ports:
+      - "8080:8080"
